@@ -60,7 +60,7 @@ namespace WpfApp1.Pages
                     string welcomeMessage = $"Добро пожаловать, {wizard.AuthorName}!";
 
                     // 🍲 Переходим на главную страницу с рецептами
-                    ApplicationData.AppFrame.Navigate(new PageTask());
+                    ApplicationData.AppFrame.frmMain.Navigate(new PageTask());
                 }
             }
             catch (System.Exception ex)

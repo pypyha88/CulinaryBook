@@ -28,7 +28,7 @@ namespace WpfApp1
             try
             {
                 // Создаем экземпляр контекста базы данных
-                ApplicationData.AppConnect.model01 = new ApplicationData.CulinaryBookDBEntities();
+                ApplicationData.AppConnect.model01 = new ApplicationData.CulinaryBookDBEntities1();
 
             }
             catch (System.Exception ex)
@@ -51,7 +51,7 @@ namespace WpfApp1
         private void LoadAuthorizationPage()
         {
             // Создаем страницу авторизации
-            FrmMain.Navigate(new Autorizaiton());
+            FrmMain.Navigate(new Pages.Autorizaiton());
         }
     }
 }

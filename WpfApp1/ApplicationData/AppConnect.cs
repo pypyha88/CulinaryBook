@@ -7,6 +7,6 @@ namespace WpfApp1.ApplicationData
     public static class AppConnect
     {
         // Статический объект контекста базы данных
-        public static CulinaryBookDBEntities model01;
+        public static CulinaryBookDBEntities1 model01;
     }
 }
