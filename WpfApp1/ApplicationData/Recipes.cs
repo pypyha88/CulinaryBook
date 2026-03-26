@@ -47,17 +47,5 @@ namespace WpfApp1.ApplicationData
         public virtual ICollection<RecipeTags> RecipeTags { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reviews> Reviews { get; set; }
-        public string FavIcon { get; internal set; }
-    }
-    // ApplicationData/RecipesPartial.cs
-    namespace WpfApp1.ApplicationData
-    {
-        public partial class Recipes
-        {
-            /// <summary>
-            /// Иконка для кнопки избранного в карточке
-            /// </summary>
-            public string FavIcon { get; set; }
-        }
     }
 }

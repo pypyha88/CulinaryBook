@@ -5,7 +5,7 @@
  Title="Вход в Хогвартс 🏰" Height="408" Width="308">
 
     <Grid Background="#FF500805">
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="492" Width="345">
 
             <!-- 🏰 Заголовок приложения -->
             <TextBlock Text="Кулинарная книга"
