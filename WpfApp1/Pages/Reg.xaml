@@ -5,12 +5,11 @@
  Title="Регистрация в Хогвартс ✨"
  Width="400" Height="450">
 
-    <Grid Background="#FF500805">
+    <Grid Background="#FF500805" Margin="0,0,-20,-254">
 
         <!-- 🏰 Заголовок страницы -->
         <TextBlock x:Name="txtTitle"
  Text="Регистрация нового волшебника 🧙♂️"
- Style="{StaticResource Title}"
  HorizontalAlignment="Center"
  VerticalAlignment="Top"
  Margin="0,10,0,0"
@@ -32,7 +31,6 @@ FontWeight="Bold"/>
 
             <!-- Имя волшебника -->
             <TextBlock Text="Имя волшебника:"
- Style="{StaticResource St4}"
  Margin="0,5,0,2"/>
             <TextBox x:Name="txtName"
  Height="25"
@@ -40,7 +38,6 @@ FontWeight="Bold"/>
 
             <!-- Дата рождения -->
             <TextBlock Text="Дата рождения:"
- Style="{StaticResource St4}"
  Margin="0,5,0,2"/>
             <DatePicker x:Name="dB"
  Height="25"
@@ -48,7 +45,6 @@ FontWeight="Bold"/>
 
             <!-- Стаж в магической кулинарии -->
             <TextBlock Text="Стаж (лет):"
- Style="{StaticResource St4}"
  Margin="0,5,0,2"/>
             <TextBox x:Name="stag"
  Height="25"
@@ -67,7 +63,6 @@ FontWeight="Bold"/>
 
             <!-- Магическое имя (логин) -->
             <TextBlock Text="Магическое имя (логин):"
- Style="{StaticResource St4}"
  Margin="0,5,0,2"/>
             <TextBox x:Name="txtLogin"
  Height="25"
@@ -75,7 +70,6 @@ FontWeight="Bold"/>
 
             <!-- Защитное заклинание (пароль) -->
             <TextBlock Text="Защитное заклинание (пароль):"
- Style="{StaticResource St4}"
  Margin="0,5,0,2"/>
             <PasswordBox x:Name="pswPass"
  Height="25"
@@ -84,7 +78,6 @@ PasswordChanged="pswPass_PasswordChanged"/>
 
             <!-- Подтверждение заклинания -->
             <TextBlock Text="Повторите заклинание:"
- Style="{StaticResource St4}"
  Margin="0,10,0,2"/>
             <PasswordBox x:Name="pswPass2"
  Height="25"
@@ -103,7 +96,6 @@ FontWeight="Bold"/>
 
             <!-- Магическая почта (для сов) -->
             <TextBlock Text="Магическая почта:"
- Style="{StaticResource St4}"
  Margin="0,5,0,2"/>
             <TextBox x:Name="txtMail"
  Height="25"
@@ -111,7 +103,6 @@ FontWeight="Bold"/>
 
             <!-- Телефон (для экстренной связи) -->
             <TextBlock Text="Телефон:"
- Style="{StaticResource St4}"
  Margin="0,5,0,2"/>
             <TextBox x:Name="txtNumber"
  Height="25"
@@ -123,7 +114,6 @@ FontWeight="Bold"/>
  Margin="0,10,0,0">
                 <Button x:Name="btnReg"
  Content="Стать волшебником ✨"
- Style="{StaticResource MagicButtonStyle}"
  Width="180"
  Height="35"
  Margin="0,0,10,0"
@@ -131,7 +121,6 @@ FontWeight="Bold"/>
 
                 <Button x:Name="btnBack"
  Content="Вернуться ↩️"
- Style="{StaticResource SecondaryMagicButtonStyle}"
  Width="180"
  Height="35"
  Click="btnBack_Click"/>

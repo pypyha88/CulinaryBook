@@ -139,6 +139,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PageTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Reg.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -147,6 +151,9 @@
   <ItemGroup>
     <Compile Include="Pages\Autorization.xaml.cs">
       <DependentUpon>Autorization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageTask.xaml.cs">
+      <DependentUpon>PageTask.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Reg.xaml.cs">
       <DependentUpon>Reg.xaml</DependentUpon>
