@@ -8,5 +8,6 @@ namespace WpfApp1.ApplicationData
     {
         // Статический объект контекста базы данных
         public static CulinaryBookDBEntities1 model01;
+        public static int AuthorID;
     }
 }

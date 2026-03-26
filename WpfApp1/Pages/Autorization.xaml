@@ -2,7 +2,7 @@
 <Page x:Class="WpfApp1.Pages.Autorizaiton"
  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
- Title="Вход в Хогвартс 🏰">
+ Title="Вход в Хогвартс 🏰" Height="408" Width="308">
 
     <Grid Background="#FF500805">
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
