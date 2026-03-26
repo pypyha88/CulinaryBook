@@ -251,7 +251,7 @@ namespace WpfApp1.Pages
         }
 
         /// <summary> 
-        /// 🔄 Обработчик изменения пароля (валидация в реальном времени) 
+        /// 🔄 Обработчик изменения пароля (валидация в реальном времени) сс
         /// </summary> 
         private void pswPass_PasswordChanged(object sender, RoutedEventArgs e)
         {
