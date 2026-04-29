@@ -1,1 +1,167 @@
-﻿
+﻿<Page x:Class="WpfApp1.Pages.AddRecip"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="900"
+      Title="Добавление рецепта 🧙‍♂️">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <!-- 🏰 Заголовок страницы -->
+        <Border Grid.Row="0" CornerRadius="10" Margin="20,10,20,10">
+            <TextBlock Text="📖 Добавление магического рецепта"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="22"
+                       FontFamily="Segoe Script"
+                       FontWeight="Bold"/>
+        </Border>
+
+        <!-- 📝 ОСНОВНАЯ ФОРМА -->
+        <Grid Grid.Row="1" Margin="20,0,20,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="260"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- 📋 Левая колонка - поля ввода -->
+            <StackPanel Grid.Column="0" Margin="0,10,20,0">
+
+                <!-- 🏷️ Название рецепта -->
+                <TextBlock Text="Введите название рецепта:"
+                           FontFamily="Segoe Script"
+                           FontSize="14"
+                           Margin="0,0,0,4"/>
+                <TextBox x:Name="NameRecepis"
+                         Height="32"
+                         Margin="0,0,0,12"
+                         Padding="5,4"
+                         FontSize="13"/>
+
+                <!-- 📖 Описание -->
+                <TextBlock Text="Введите описание рецепта:"
+                           FontFamily="Segoe Script"
+                           FontSize="14"
+                           Margin="0,0,0,4"/>
+                <TextBox x:Name="DescRecipes"
+                         Height="70"
+                         Margin="0,0,0,12"
+                         Padding="5,4"
+                         FontSize="13"
+                         TextWrapping="Wrap"
+                         AcceptsReturn="True"/>
+
+                <!-- 📁 Категория -->
+                <TextBlock Text="Выберите категорию рецепта:"
+                           FontFamily="Segoe Script"
+                           FontSize="14"
+                           Margin="0,0,0,4"/>
+                <ComboBox x:Name="CategoryCombo"
+                          Height="32"
+                          Margin="0,0,0,12"
+                          FontSize="13"/>
+
+                <!-- 🧙 Автор -->
+                <TextBlock Text="Выберите автора:"
+                           FontFamily="Segoe Script"
+                           FontSize="14"
+                           Margin="0,0,0,4"/>
+                <ComboBox x:Name="AuthorCombo"
+                          Height="32"
+                          Margin="0,0,0,12"
+                          FontSize="13"/>
+
+                <!-- ⏰ Время приготовления -->
+                <TextBlock Text="Введите время приготовления (мин):"
+                           FontFamily="Segoe Script"
+                           FontSize="14"
+                           Margin="0,0,0,4"/>
+                <TextBox x:Name="TextTime"
+                         Height="32"
+                         Margin="0,0,0,12"
+                         Padding="5,4"
+                         FontSize="13"/>
+
+                <!-- 🖼️ Путь к картинке -->
+                <TextBlock Text="Путь к изображению:"
+                           FontFamily="Segoe Script"
+                           FontSize="14"
+                           Margin="0,0,0,4"/>
+                <Grid Margin="0,0,0,12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="130"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="TextPage"
+                             Grid.Column="0"
+                             Height="32"
+                             Padding="5,4"
+                             FontSize="13"
+                             IsReadOnly="True"
+                             Margin="0,0,8,0"/>
+                    <Button x:Name="LoadImage"
+                            Grid.Column="1"
+                            Content="📂 Загрузить фото"
+                            Height="32"
+                            FontFamily="Segoe Script"
+                            FontSize="12"
+                            Click="LoadImage_Click"/>
+                </Grid>
+
+            </StackPanel>
+
+            <!-- 🖼️ Правая колонка - превью изображения -->
+            <StackPanel Grid.Column="1" Margin="0,10,0,0">
+                <TextBlock Text="Предпросмотр:"
+                           FontFamily="Segoe Script"
+                           FontSize="14"
+                           Margin="0,0,0,8"
+                           HorizontalAlignment="Center"/>
+                <Border BorderBrush="Gray"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        Width="240"
+                        Height="220"
+                        HorizontalAlignment="Center">
+                    <Image x:Name="pictureBox"
+                           Stretch="UniformToFill"
+                           ClipToBounds="True"/>
+                </Border>
+            </StackPanel>
+        </Grid>
+
+        <!-- 🎭 ПАНЕЛЬ КНОПОК -->
+        <Border Grid.Row="2" CornerRadius="0,0,10,10" Margin="20,0,20,10">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Margin="0,0,10,0">
+                <Button x:Name="HomeWorld"
+                        Content="⬅️ К рецептам"
+                        Width="140"
+                        Height="35"
+                        Margin="10,0"
+                        FontFamily="Segoe Script"
+                        FontSize="13"
+                        Click="HomeWorld_Click"/>
+                <Button x:Name="AddRecep"
+                        Content="✅ Добавить"
+                        Width="140"
+                        Height="35"
+                        Margin="10,0"
+                        FontFamily="Segoe Script"
+                        FontSize="13"
+                        Click="AddRecep_Click"/>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Page>

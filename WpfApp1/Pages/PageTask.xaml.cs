@@ -252,8 +252,8 @@ namespace WpfApp1
             var button = sender as Button;
             if (button?.Tag is Recipes selectedRecipe)
             {
-                // 🎭 Переход на страницу редактирования рецепта 
-              //  NavigationService.Navigate(new Pages.AddRecip(selectedRecipe));
+                // 🎭 Переход на страницу редактирования рецепта
+                ApplicationData.AppFrame.frmMain.Navigate(new Pages.AddRecip(selectedRecipe));
             }
             else
             {
@@ -266,8 +266,8 @@ namespace WpfApp1
         /// </summary> 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            // 🎭 Переход на страницу добавления нового рецепта 
-         //   NavigationService.Navigate(new Pages.AddRecip(null));
+            // 🎭 Переход на страницу добавления нового рецепта
+            ApplicationData.AppFrame.frmMain.Navigate(new Pages.AddRecip(null));
         }
 
         /// <summary> 
@@ -366,8 +366,8 @@ namespace WpfApp1
         {
             if (listProducts.SelectedItem is Recipes selectedRecipe)
             {
-                // 🎭 Переход на страницу просмотра/редактирования рецепта 
-               // NavigationService.Navigate(new Pages.AddRecip(selectedRecipe));
+                // 🎭 Переход на страницу просмотра/редактирования рецепта
+                ApplicationData.AppFrame.frmMain.Navigate(new Pages.AddRecip(selectedRecipe));
             }
         }
 

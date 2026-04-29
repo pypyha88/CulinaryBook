@@ -73,7 +73,8 @@ namespace WpfApp1.Pages
 
         private void btnReg_Click(object sender, RoutedEventArgs e)
         {
-
+            // 📝 Переход на страницу регистрации нового волшебника
+            ApplicationData.AppFrame.frmMain.Navigate(new Reg());
         }
 
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
